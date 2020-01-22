@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        function validar(){
-            var email = document.getElementById("email").value;
-            var pwd = document.getElementById("micontrasenya").value;
-            if (email=="x@gmail.com" && pwd=="patata"){
+        function validar(){ // bloque de codigos que solo se ejecutara si se le menciona
+            var email = document.getElementById("email").value;// pides que te muestre el email
+            var pwd = document.getElementById("micontrasenya").value;// pides que te muestre la password
+            if (email=="x@gmail.com" && pwd=="patata"){ //condicional para que ocurra sucesos programdos
                 alert("TU VIVES");
             } else {
                 alert("TU MUERES");
@@ -19,9 +19,9 @@
 </head>
 <body>
     <form action="" method="">
-        <input type="email" name="" id="email">
-        <input type="password" name="" id="micontrasenya">
-        <input type="button" value="Validar" onclick="validar()">
+        <input type="email" name="" id="email"> <!--crea marco para introducir el email-->
+        <input type="password" name="" id="micontrasenya"><!-- crea marco para introducir password-->
+        <input type="button" value="Validar" onclick="validar()"><!--crear boton para enviar registro-->
     </form>
 </body>
 </html>
